@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* ---------------------------------------------------------------------------------------
+####Module　～ページを構成するほぼすべてがこのカテゴリに属する（ボタン・見出しなど）～
+--------------------------------------------------------------------------------------- */
+/*-----------------------------------------------
+				ImportantNotice
+				　　重要なお知らせ
+-----------------------------------------------*/
+.ImportantNotice {
+	width: $base_general_width;
+	height: 64px;
+	margin: 0 auto;
+	line-height: 64px;
+	border-bottom: 1px solid #666;
+}
+
+.ImportantNotice__title {
+	margin: 0 20px 0 85px;
+	font-size: 11px;
+	color: #FF0000;
+	float: left;
+}
+
+.ImportantNotice__text {
+	margin: 0 20px 0 0;
+	font-size: 11px;
+	float: left;
+}
+
+.ImportantNotice__details {
+	font-size: 10px;
+	float: left;
+}
+
+
+/*-----------------------------------------------
+				Info_Access_Box
+			　　　お知らせ×アクセスのBOX
+-----------------------------------------------*/
+.Info_Access_Box {
+	width: $base_general_width - 130px;
+	margin: 0 auto;
+	padding: 40px 50px 50px 80px;
+}
+
+
+/*-----------------------------------------------
+				MainInformation
+				　　  お知らせ
+-----------------------------------------------*/
+.MainInformation {
+	width: 500px;
+	float: left;
+}
+
+.MainInformation__title {
+	font-size: 20px;
+}
+
+.MainInformation__title span {
+	margin: 0 0 0 20px;
+}
+
+.MainInformation__Cont {
+	margin: 50px 0 20px 0;
+}
+
+.MainInformation__Cont__list {
+	@extend %clearfix;  //.clearfixにextend
+	border-bottom: dotted 1px #666;
+	line-height: 45px;
+}
+
+.MainInformation__Cont__list__date {
+	float: left;
+}
+
+.MainInformation__Cont__list__category {
+	padding: 0 0 0 30px;
+	float: left;
+}
+
+.MainInformation__Cont__list__text {
+	margin: 0 0 0 20px;
+	float: left;
+}
+
+.MainInformation__listlink {
+	text-align: right;
+}
+
+.MainInformation__listlink a {
+	display: block;
+	width: 100px;
+	margin: 0 0 0 400px;
+}
+
+
+/*-----------------------------------------------
+				MainAccess
+				　 アクセス
+-----------------------------------------------*/
+.MainAccess {
+	width: 260px;
+	float: right;
+}
+
+.MainAccess__title {font-size: 20px;}
+
+.MainAccess__title span {
+	margin: 0 0 0 20px;
+}
+
+.MainAccess__Cont {
+	margin: 50px 0 20px 0;
+}
+
+
+/*-----------------------------------------------
+				MainSchedule
+				　　スケジュール
+-----------------------------------------------*/
+.MainSchedule {
+	width: $base_general_width;
+	margin: 0 auto;
+	@extend %clearfix;  //.clearfixにextend
+}
+
+.MainSchedule__Cont {
+	width: 285px;
+	float: left;
+	margin: 0 24px 40px;
+	border-bottom: dotted 1px #666;
+}
+
+.MainSchedule__Cont__text {
+	width: 280px;
+    height: 70px;
+    padding: 0 0 0 5px;
+    display:table;
+    text-align: left;
+}
+
+.MainSchedule__Cont__text > *{
+    display:table-cell;
+    vertical-align: middle;
+    line-height: 150%;
+}
+
+.MainSchedule__Cont__details {
+	padding: 10px 0 10px 20px;
+}
+
+.January {background: url(http://placehold.jp/51x51.png) no-repeat center right;}
+.February {background: url(http://placehold.jp/52x52.png) no-repeat center right}
+.March {background: url(http://placehold.jp/53x53.png) no-repeat center right}
+.April {background: url(http://placehold.jp/54x54.png) no-repeat center right}
+.May {background: url(http://placehold.jp/55x55.png) no-repeat center right}
+.June {background: url(http://placehold.jp/56x56.png) no-repeat center right}
+.July {background: url(http://placehold.jp/57x57.png) no-repeat center right}
+.August {background: url(http://placehold.jp/58x58.png) no-repeat center right}
+.September {background: url(http://placehold.jp/59x59.png) no-repeat center right}
+.October {background: url(http://placehold.jp/60x60.png) no-repeat center right}
+.November {background: url(http://placehold.jp/61x61.png) no-repeat center right}
+.December {background: url(http://placehold.jp/62x62.png) no-repeat center right}
+
+
+/*-----------------------------------------------
+				MainIntroduce
+				コースレッスン案内
+-----------------------------------------------*/
+.MainIntroduce{
+	width: $base_general_width;
+	margin: 0 auto;
+	@extend %clearfix;  //.clearfixにextend
+}
+
+.MainIntroduce__Lesson {}
+
+.MainIntroduce__Lesson__Cont {
+	width: 630px;
+	height:250px;
+	background: url(http://placehold.jp/630x250.png) no-repeat center center;
+	float: left;
+}
+
+.MainIntroduce__Lesson__Cont__details {
+	margin: 215px 0 0 20px;
+	padding: 0 0 0 20px;
+}
+
+
+
+/*-----------------------------------------------
+					SNS
+				ソーシャルコンテンツ
+-----------------------------------------------*/
+.fb_timeline {
+	width: 285px;
+	height: 330px;
+	float: right;
+}

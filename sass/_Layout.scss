@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* ---------------------------------------------------------------------------------------
+####Layout　～IDを用いて定義されるヘッダー、フッター、コンテンツエリア、サイドバー構成の大枠、セクション要素～
+--------------------------------------------------------------------------------------- */
+
+/*-----------------------------------------------
+					Header
+-----------------------------------------------*/
+
+/*---------- Header@Default_ID ----------*/
+#header_wrap {}
+#header {}
+
+
+/*---------- Header@Original_CSS ----------*/
+/*----- NaviPrim -----*/
+.NaviPrim {@extend %base_outside;}
+
+.MainLogo {
+	width: 250px;
+	height: 90px;
+	background: #127498;
+	float: left;
+}
+
+.NaviPrim__Cont {
+	width: 725px;
+	margin: 70px 0 0 0;
+	border-left: 1px solid #666;
+	float: right;
+}
+
+.NaviPrim__Cont li {
+	width: 180px;
+	padding: 2px 0;
+	float: left;
+	border-right: 1px solid #666;
+	background: #127498;
+}
+
+/* .NaviPrim__Cont__list {
+	width: 180px;
+	padding: 2px 0;
+	float: left;
+	border-right: 1px solid #666;
+	background: #127498;
+} */
+
+
+/*----- NaviSecond -----*/
+.NaviSecond {@extend %base_outside;}
+
+.NaviSecond__Cont {
+	width: 320px;
+	margin: 0 0 0 680px;
+}
+
+.NaviSecond__Cont li {
+	margin-top: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	float: left;
+	background: #127498;
+}
+
+/* .NaviSecond__Cont__list {
+	padding: 2px 0;
+	float: left;
+	background: #127498;
+} */
+
+/* 新規登録 */
+.signup{
+	border-right: 1px solid #666;
+	padding: 0 20px 0 20px;
+}
+
+/* ログイン */
+.login {
+	padding: 0 20px 0 20px;
+}
+
+/* お問い合わせ */
+.inquiry {
+	margin: 0 0 0 40px;
+	padding: 0 0 0 20px;
+}
+
+
+
+
+/*-----------------------------------------------
+					Footer
+-----------------------------------------------*/
+/*---------- Footer@Default_ID ----------*/
+#footer_wrap {}
+#footer{}
+
+
+/*---------- Footer@Original_CSS ----------*/
+/* Footer__menuPrim */
+.Footer__menuPrim {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 40px;
+	border-top: 1px solid #666;
+}
+
+.Footer__menuPrim__con {
+	width: 169px;
+	margin: 35px 0 0 0;
+	padding: 0 0 0 10px;
+	border-left: 1px solid #666;
+	float: left; 
+}
+
+.Footer__menuPrim__con__title {margin: 0 0 25px 0; }
+.Footer__menuPrim__con__list {line-height: 200%;}
+.Footer__menuPrim__con__list li {padding: 0 0 0 10px;}
+
+.Footer__menuSecond {@extend %base_outside;}
+
+.Footer__menuSecond__Cont {
+	margin: 30px auto;
+	@extend %clearfix;  //.clearfixにextend
+	display: inline-block;
+}
+
+.Footer__menuSecond__Cont li {
+	padding: 0 20px;
+	float: left;
+	border-right: 1px solid #666;
+}
+
+.Footer__menuSecond__Cont li:last-child {border-right: none;}
+
+.FooterCopyright {
+	margin: 0 0 30px 0;
+	text-align: center;
+}
