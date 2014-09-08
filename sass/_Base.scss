@@ -129,3 +129,11 @@ $base_general_width: 1000px;
 } 
 
 
+%clearfix {
+  *zoom: 1;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
